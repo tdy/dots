@@ -293,7 +293,9 @@ globalkeys = awful.util.table.join(
   awful.key({ modkey }, 0,
     function ()
       local screen = mouse.screen
-      if tags[screen][10] then
+      if tags[screen][10].selected then
+        awful.tag.history.restore(screen)
+      elseif tags[screen][10] then
         awful.tag.viewonly(tags[screen][10])
       end
     end),
@@ -354,7 +356,9 @@ for i = 1, keynumber do
     awful.key({ modkey }, "#" .. i + 9,
       function ()
         local screen = mouse.screen
-        if tags[screen][i] then
+        if tags[screen][i].selected then
+          awful.tag.history.restore(screen)
+        elseif tags[screen][i] then
           awful.tag.viewonly(tags[screen][i])
         end
       end),
