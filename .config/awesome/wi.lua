@@ -73,7 +73,7 @@ cpugraph1:set_color({
     { 0.25, beautiful.fg_center_widget },
     { 1, beautiful.fg_end_widget }
   }})
-vicious.register(cpugraph0, vicious.widgets.cpu, "$3")
+vicious.register(cpugraph1, vicious.widgets.cpu, "$3")
 
 -- Core 1 %
 cpupct1 = wibox.widget.textbox()
@@ -95,7 +95,7 @@ cpugraph2:set_color({
     { 0.25, beautiful.fg_center_widget },
     { 1, beautiful.fg_end_widget }
   }})
-vicious.register(cpugraph0, vicious.widgets.cpu, "$4")
+vicious.register(cpugraph2, vicious.widgets.cpu, "$4")
 
 -- Core 2 %
 cpupct2 = wibox.widget.textbox()
