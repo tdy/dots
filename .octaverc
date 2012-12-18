@@ -1,0 +1,4 @@
+edit mode async
+edit editor "gvim --servername OCTAVE --remote-tab %s"
+PS1("\\w:\\#> ")
+PAGER("vimpager")
