@@ -362,7 +362,8 @@ globalkeys = awful.util.table.join(
       if not p then
         awful.util.spawn_with_shell(pianobar_screen)
       end
-      scratch.drop("xterm -name pianobar -e 'screen -x pianobar'", "top", "center", 0.5, 0.2, false)
+      scratch.drop("xterm -name pianobar -e 'screen -x pianobar'",
+        "top", "center", 0.5, 0.2, false)
     end),
   awful.key({ modkey }, "=", function ()
       awful.util.spawn_with_shell(pianobar_like)
