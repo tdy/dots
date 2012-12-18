@@ -1,4 +1,4 @@
-Some configs and screenshots from my Arch Linux system:
+Some configs and screenshots from my laptop:
 * awesomewm 3.5+
 * vim
-* rxvt-unicode-256color
+* pianobar
