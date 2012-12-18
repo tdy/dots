@@ -1,0 +1,86 @@
+Xcursor*theme:         Vanilla-DMZ-AA
+
+Xft.dpi:               144
+Xft.antialias:         true
+Xft.hinting:           true
+Xft.hintstyle:         hintfull
+Xft.rgba:              rgb
+
+urxvt*font:            xft:monaco:pixelsize=25
+urxvt*boldFont:        xft:monaco:pixelsize=25
+urxvt*scrollBar:       false
+urxvt*saveLines:       32767
+urxvt*perl-lib:        /usr/lib/urxvt/perl/
+urxvt*perl-ext-common: default,matcher
+urxvt*urlLauncher:     firefox
+urxvt*matcher.button:  1
+urxvt.colorUL:         #a9c9bc
+urxvt*cursorColor:     orange
+urxvt*cursorBlink:     true
+urxvt*geometry:        90x26
+urxvt*title:           rxvt-256color
+urxvt*tintColor:       #636363
+urxvt*shading:         100
+urxvt*transparent:     true
+urxvt*pastableTabs:    true
+urxvt*jumpScroll:      true
+urxvt*secondaryScroll: true
+urxvt*urgentOnBell:    true
+
+xterm*font:            -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
+xterm*boldFont:        -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
+xterm*boldMode:        false
+xterm*scrollBar:       false
+xterm*saveLines:       32767
+xterm*borderLess:      true
+xterm*cursorColor:     orange
+xterm*cursorBlink:     true
+xterm*pastableTabs:    true
+xterm*jumpScroll:      true
+
+pianobar*font:         -*-monofur-medium-r-*-*-30-*-*-*-*-*-*-*
+pianobar*boldFont:     -*-monofur-medium-r-*-*-30-*-*-*-*-*-*-*
+pianobar*foreground:   #a6a6a6
+pianobar*urgentOnBell: true
+
+scratch*font:          -*-ubuntu mono-medium-r-*-*-40-*-*-*-*-*-*-*
+scratch*boldFont:      -*-ubuntu mono-medium-r-*-*-40-*-*-*-*-*-*-*
+scratch*boldMode:      false
+scratch*scrollBar:     false
+scratch*saveLines:     32767
+scratch*borderLess:    true
+scratch*cursorColor:   orange
+scratch*cursorBlink:   true
+scratch*pastableTabs:  true
+scratch*jumpScroll:    true
+
+alsamixer*scrollBar:   false
+
+! Xoria256 {{{
+*foreground: #d0d0d0
+*background: #1a1a1a
+!black
+*color0:     #1a1a1a
+*color8:     #808080
+!red
+*color1:     #df8787
+*color9:     #B56E6E
+!green
+*color2:     #9ece9e
+*color10:    #c4edc4
+!yellow
+*color3:     #ffffaf
+*color11:    #D6D693
+!blue
+*color4:     #87afdf
+*color12:    #6E8EB5
+!magenta
+*color5:     #dfaf87
+*color13:    #B58E6E
+!cyan
+*color6:     #afafdf
+*color14:    #8E8EB5
+!white
+*color7:     #d0d0d0
+*color15:    #e2e2e5
+! }}}
