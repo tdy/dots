@@ -314,8 +314,13 @@ globalkeys = awful.util.table.join(
   awful.key({ modkey, "Control" }, "n", awful.client.restore),
 
   -- Scratch
-  awful.key({ modkey }, "`", function ()
-      awful.util.spawn("scratch.sh", false)
+  awful.key({ modkey }, "`", function()
+      scratch.drop("xterm -name scratch", "bottom", "center", 1.0, 0.40, false)
+    end),
+
+  -- Thunderbird
+  awful.key({ modkey }, ";", function ()
+      scratch.drop("thunderbird", "center", "center", 0.95, 0.9, false)
     end),
 
   -- Prompt
@@ -350,6 +355,14 @@ globalkeys = awful.util.table.join(
     end),
   awful.key({ modkey, "Shift" }, "XF86AudioPlay", function ()
       awful.util.spawn_with_shell(pianobar_quit)
+    end),
+  awful.key({ modkey }, "'", function ()
+      local f = io.popen("pgrep pianobar")
+      p = f:read("*line")
+      if not p then
+        awful.util.spawn_with_shell(pianobar_screen)
+      end
+      scratch.drop("xterm -name pianobar -e 'screen -x pianobar'", "top", "center", 0.5, 0.2, false)
     end),
   awful.key({ modkey }, "=", function ()
       awful.util.spawn_with_shell(pianobar_like)
@@ -414,10 +427,18 @@ clientkeys = awful.util.table.join(
     function (c)
       c.minimized = true
     end),
+
+  -- Maximize
   awful.key({ modkey, }, "m",
     function (c)
       c.maximized_horizontal = not c.maximized_horizontal
       c.maximized_vertical = not c.maximized_vertical
+    end),
+
+  -- Scratchify
+  awful.key({ modkey, }, "v",
+    function (c)
+      scratch.pad.set(c, 0.50, 0.50, true)
     end)
 )
 
@@ -504,8 +525,6 @@ awful.rules.rules = {
     properties = { floating = true, above = true } },
   { rule = { class = "Thunar" },
     properties = { tag = tags[1][7] } },
-  { rule = { class = "scratch" },
-    properties = { floating = true, above = true } },
   { rule = { class = "Gimp" },
     properties = { tag = tags[1][8] } }
 }
