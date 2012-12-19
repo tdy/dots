@@ -63,7 +63,9 @@ vicious.register(cpugraph0, vicious.widgets.cpu, "$2")
 
 -- Core 0 %
 cpupct0 = wibox.widget.textbox()
-cpupct0.fit = function(box,w,h) local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(pctwidth,w),h end
+cpupct0.fit = function(box,w,h)
+  local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(pctwidth,w),h
+end
 vicious.register(cpupct0, vicious.widgets.cpu, "$2%", 2)
 
 -- Core 1 graph
