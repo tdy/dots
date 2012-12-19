@@ -1,3 +1,9 @@
+-----------------------
+-- AwesomeWM widgets --
+--      3.5-rc1      --
+--   <tdy@gmx.com>   --
+-----------------------
+
 local awful = require("awful")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
@@ -13,13 +19,16 @@ mpdwidth    = 365
 -- {{{ SPACERS
 space = wibox.widget.textbox()
 space:set_text(" ")
+
 comma = wibox.widget.textbox()
 comma:set_markup(",")
+
 pipe = wibox.widget.textbox()
-pipetext = "<span color='" .. beautiful.bg_em .. "'>|</span>"
-pipe:set_markup(pipetext)
+pipe:set_markup("<span color='" .. beautiful.bg_em .. "'>|</span>")
+
 tab = wibox.widget.textbox()
 tab:set_text("         ")
+
 volspace = wibox.widget.textbox()
 volspace:set_text(" ")
 -- }}}
@@ -31,10 +40,9 @@ vicious.cache(vicious.widgets.cpuinf)
 
 -- Core 0 freq
 cpufreq = wibox.widget.textbox()
-vicious.register(cpufreq, vicious.widgets.cpuinf,
-   function(widget, args)
-    return string.format("<span color='" .. beautiful.fg_em .. "'>cpu</span>%1.1fGHz", args["{cpu0 ghz}"])
-  end, 3000)
+vicious.register(cpufreq, vicious.widgets.cpuinf, function(widget, args)
+   return string.format("<span color='" .. beautiful.fg_em .. "'>cpu</span>%1.1fGHz", args["{cpu0 ghz}"])
+end, 3000)
 
 -- Core 0 graph
 cpugraph0 = awful.widget.graph()
@@ -77,7 +85,9 @@ vicious.register(cpugraph1, vicious.widgets.cpu, "$3")
 
 -- Core 1 %
 cpupct1 = wibox.widget.textbox()
-cpupct1.fit = function(box,w,h) local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(pctwidth,w),h end
+cpupct1.fit = function(box,w,h)
+  local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(pctwidth,w),h
+end
 vicious.register(cpupct1, vicious.widgets.cpu, "$3%", 2)
 
 -- Core 2 graph
@@ -99,9 +109,10 @@ vicious.register(cpugraph2, vicious.widgets.cpu, "$4")
 
 -- Core 2 %
 cpupct2 = wibox.widget.textbox()
-cpupct2.fit = function(box,w,h) local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(pctwidth,w),h end
+cpupct2.fit = function(box,w,h)
+  local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(pctwidth,w),h
+end
 vicious.register(cpupct2, vicious.widgets.cpu, "$4%", 2)
-
 -- }}}
 
 -- {{{ MEMORY
@@ -217,7 +228,9 @@ vicious.register(txwidget, vicious.widgets.net,
 
 -- Up speed
 upwidget = wibox.widget.textbox()
-upwidget.fit = function(box,w,h) local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(netwidth,w),h end
+upwidget.fit = function(box,w,h)
+  local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(netwidth,w),h
+end
 vicious.register(upwidget, vicious.widgets.net, "${eth0 up_kb}", 2)
 
 -- Down graph
@@ -243,7 +256,9 @@ vicious.register(rxwidget, vicious.widgets.net,
 
 -- Down speed
 downwidget = wibox.widget.textbox()
-downwidget.fit = function(box,w,h) local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(netwidth,w),h end
+downwidget.fit = function(box,w,h)
+  local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(netwidth,w),h
+end
 vicious.register(downwidget, vicious.widgets.net, "${eth0 down_kb}", 2)
 -- }}}
 
@@ -252,8 +267,9 @@ weather = wibox.widget.textbox()
 vicious.register(weather, vicious.widgets.weather,
   "<span color='" .. beautiful.fg_em .. "'>${sky}</span> @ ${tempf}°F on",
   1501, "XXXX")
-weather:buttons(awful.util.table.join(awful.button({ }, 1,
-   function() vicious.force({ weather }) end)))
+weather:buttons(awful.util.table.join(awful.button({ }, 1, function()
+  vicious.force({ weather })
+end)))
 -- }}}
 
 -- {{{ PACMAN
