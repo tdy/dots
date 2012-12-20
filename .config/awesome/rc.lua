@@ -118,7 +118,7 @@ mylauncher = wibox.widget.imagebox()
 mylauncher:set_image(beautiful.awesome_icon)
 mylauncher:buttons(awful.util.table.join(
   awful.button({ }, 1, function()
-      awful.util.spawn_with_shell("i3lock -d -p defaut -c " .. beautiful.bg_focus:gsub("#",""))
+      awful.util.spawn_with_shell("i3lock -d -p default -c " .. beautiful.bg_focus:gsub("#",""))
     end),
   awful.button({ modkey }, 1, function()
       awful.util.spawn_with_shell("reboot.sh")
