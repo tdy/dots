@@ -178,7 +178,7 @@ vicious.cache(vicious.widgets.fs)
 -- Root used
 rootfsused = wibox.widget.textbox()
 vicious.register(rootfsused, vicious.widgets.fs,
-  "<span color='" .. beautiful.fg_em .. "'>sdd</span>${/ used_gb}GB", 97)
+  "<span color='" .. beautiful.fg_em .. "'>ssd</span>${/ used_gb}GB", 97)
 
 -- Root bar
 rootfsbar = awful.widget.progressbar()
