@@ -67,20 +67,6 @@ autocmd BufReadPost *.doc %!antiword "%"
 "avoid auto indent
 set pastetoggle=<F10>
 
-"octave syntax
-augroup filetypedetect
-  au! BufRead,BufNewFile *.m,*.oct set filetype=octave
-augroup END
-
-"octave keywords for autocomplete
-if has("autocmd") && exists("+omnifunc")
-   autocmd Filetype octave
-   \ if &omnifunc == "" |
-   \ setlocal omnifunc=syntaxcomplete#Complete |
-   \ endif
-endif
-autocmd FileType matlab setlocal keywordprg=info\ octave\ --vi-keys\ --index-search
-
 "go to start of wrapped line instead of next line
 noremap <Up> gk
 noremap <Down> gj
