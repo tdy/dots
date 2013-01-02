@@ -148,29 +148,6 @@ mempct = wibox.widget.textbox()
 mempct.width = pctwidth
 vicious.register(mempct, vicious.widgets.mem, "$1%", 5)
 
--- Swap bar
-swapbar = awful.widget.progressbar()
-swapbar:set_vertical(false):set_width(graphwidth):set_height(graphheight)
-swapbar:set_ticks(false):set_ticks_size(2)
-swapbar:set_border_color(nil)
-swapbar:set_background_color(beautiful.bg_widget)
-swapbar:set_color({
-  type = "linear",
-  from = { 0, 0 },
-  to = { graphwidth, 0 },
-  stops = {
-    { 0, beautiful.fg_widget },
-    { 0.25, beautiful.fg_center_widget },
-    { 1, beautiful.fg_end_widget }
-  }})
-vicious.register(swapbar, vicious.widgets.mem, "$5", 13)
-
--- Swap %
-swappct = wibox.widget.textbox()
-swappct.width = pctwidth
-vicious.register(swappct, vicious.widgets.mem,
-  "<span color='" .. beautiful.fg_em .. "'>swap</span>$5%", 5)
-
 -- {{{ FILESYSTEM
 -- Cache
 vicious.cache(vicious.widgets.fs)
