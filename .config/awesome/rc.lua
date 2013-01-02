@@ -198,7 +198,7 @@ for s = 1, screen.count() do
   mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, mytasklist.buttons)
 
   -- Wibox
-  mywibox[s] = awful.wibox({ position = "top", height = 24, screen = s })
+  mywibox[s] = awful.wibox({ position = "top", height = 16, screen = s })
 
   local left_wibox = wibox.layout.fixed.horizontal()
   left_wibox:add(mytaglist[s])
@@ -228,7 +228,7 @@ for s = 1, screen.count() do
   mywibox[s]:set_widget(wibox_layout)
 
   -- Graphbox
-  mygraphbox[s] = awful.wibox({ position = "bottom", height = 22, screen = s })
+  mygraphbox[s] = awful.wibox({ position = "bottom", height = 12, screen = s })
 
   local left_graphbox = wibox.layout.fixed.horizontal()
   left_graphbox:add(mylauncher)
@@ -322,7 +322,7 @@ globalkeys = awful.util.table.join(
 
   -- Scratch
   awful.key({ modkey }, "`", function()
-      scratch.drop("xterm -name scratch", "bottom", "center", 1.0, 0.40, false)
+      scratch.drop("urxvtc -name scratch", "bottom", "center", 1.0, 0.40, false)
     end),
 
   -- Thunderbird
