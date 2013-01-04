@@ -121,10 +121,10 @@ mylauncher:buttons(awful.util.table.join(
       awful.util.spawn_with_shell("i3lock -d -p default -c " .. beautiful.bg_focus:gsub("#",""))
     end),
   awful.button({ modkey }, 1, function()
-      awful.util.spawn_with_shell("reboot.sh")
+      awful.util.spawn_with_shell("systemctl reboot")
     end),
   awful.button({ modkey }, 3, function()
-      awful.util.spawn_with_shell("shutdown.sh")
+      awful.util.spawn_with_shell("systemctl shutdown")
     end)
 ))
 -- }}}
