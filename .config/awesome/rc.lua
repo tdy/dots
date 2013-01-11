@@ -121,10 +121,10 @@ mylauncher:buttons(awful.util.table.join(
       awful.util.spawn_with_shell("i3lock -d -p default -c " .. beautiful.bg_focus:gsub("#",""))
     end),
   awful.button({ modkey }, 1, function()
-      awful.util.spawn_with_shell("systemctl reboot")
+      awful.util.spawn_with_shell("zenity --question --text 'Reboot this system now?' && systemctl reboot")
     end),
   awful.button({ modkey }, 3, function()
-      awful.util.spawn_with_shell("systemctl poweroff")
+      awful.util.spawn_with_shell("zenity --question --text 'Shut down this system now?' && systemctl poweroff")
     end)
 ))
 -- }}}
