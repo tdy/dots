@@ -17,7 +17,6 @@ set showmatch
 set number
 set nofoldenable
 set backspace=indent,eol,start "untab
-set nomodeline
 set expandtab
 autocmd FileType make setlocal noexpandtab
 set t_Co=256
