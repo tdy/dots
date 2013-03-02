@@ -50,7 +50,7 @@ And screenshots
     </td>
     <td width="33%">
       <a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20110217_1440x900.png">
-        <img src="screenshots/awesome_20100113_1440x900.png" width="100%" alt="Arch Linux Thinkpad T410s (2011)" />
+        <img src="screenshots/awesome_20110217_1440x900.png" width="100%" alt="Arch Linux Thinkpad T410s (2011)" />
       </a>
     </td>
     <td width="33%">
