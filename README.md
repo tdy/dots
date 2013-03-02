@@ -26,7 +26,7 @@ Some of my configs
       <ul>
         <li><a href=".Xresources">X resources</li>
         <li><a href=".bashrc">bash profile</li>
-        <li><a href=".dir_colors">dir colors</li>
+        <li><a href=".dir_colors">ls colors</li>
         <li><a href=".gtkrc.mine">gtk2</a></li>
         <li><a href=".config/gtk-3.0/settings.ini">gtk3</a></li>
       </ul>
