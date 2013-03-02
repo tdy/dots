@@ -5,7 +5,7 @@ Some of my configs
   <tr>
     <th><a href=".config/awesome">awesomewm 3.5+</a></th>
     <th><a href=".vim">vim</a></th>
-    <th>appearance</th>
+    <th>system</th>
   </tr>
   <tr>
     <td valign="top">
@@ -25,6 +25,8 @@ Some of my configs
     <td valign="top">
       <ul>
         <li><a href=".Xresources">X resources</li>
+        <li><a href=".bashrc">bash profile</li>
+        <li><a href=".dir_colors">dir colors</li>
         <li><a href=".gtkrc.mine">gtk2</a></li>
         <li><a href=".config/gtk-3.0/settings.ini">gtk3</a></li>
       </ul>
