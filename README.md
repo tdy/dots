@@ -5,13 +5,17 @@ Some of my configs
 * [rc](.config/awesome/rc.lua)
 * [_vicious_ widgets](.config/awesome/wi.lua)
 * [_dust_ theme](.config/awesome/themes/dust/theme.lua)
+
 ### [vim](.vim)
 * [vimrc](.vim/vimrc)
 * [_railscasts_ colorscheme](.vim/colors/railscasts.vim)
+
 ### gtk
 * [2.x](.gtkrc.mine)
 * [3.x](.config/gtk-3.0/settings.ini)
+
 ### [rxvt-unicode _et al._](.Xdefaults)
+
 ### [pianobar](.config/pianobar)
 
 And [screenshots](screenshots)
