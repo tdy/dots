@@ -32,7 +32,7 @@ Some of my configs
   </tr>
 </table>
 
-And [screenshots](screenshots)
+And screenshots
 ------------
 
 <table width="90%">
@@ -49,4 +49,5 @@ And [screenshots](screenshots)
       </a>
     </td>
   </tr>
+  <tr><td colspan="2"><a href="screenshots">...</a></td></tr>
 </table>
