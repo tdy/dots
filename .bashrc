@@ -16,6 +16,11 @@ export XDG_DATA_DIRS=/usr/share
 export XDG_CONFIG_DIRS=/etc/xdg
 export XDG_CACHE_HOME="$HOME/.cache"
 
+function aurploader() {
+  makepkg --source -f
+  /usr/bin/aurploader -k -a -l "$XDG_CONFIG_HOME/aurploader.conf" "$@"
+}
+
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias startx='exec startx'
