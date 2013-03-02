@@ -57,29 +57,29 @@ scratch*jumpScroll:    true
 alsamixer*scrollBar:   false
 
 ! Xoria256 {{{
-*foreground: #d0d0d0
+*foreground: #bcbcbc
 *background: #1a1a1a
 !black
 *color0:     #1a1a1a
 *color8:     #808080
 !red
 *color1:     #df8787
-*color9:     #B56E6E
+*color9:     #b56e6e
 !green
 *color2:     #9ece9e
 *color10:    #c4edc4
 !yellow
 *color3:     #ffffaf
-*color11:    #D6D693
+*color11:    #d6d693
 !blue
 *color4:     #87afdf
-*color12:    #6E8EB5
+*color12:    #6e8eb5
 !magenta
 *color5:     #dfaf87
-*color13:    #B58E6E
+*color13:    #b58e6e
 !cyan
 *color6:     #afafdf
-*color14:    #8E8EB5
+*color14:    #8e8eB5
 !white
 *color7:     #d0d0d0
 *color15:    #e2e2e5
