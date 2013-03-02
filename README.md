@@ -1,7 +1,7 @@
 Some of my configs
 ------------
 
-<table>
+<table width="100%">
   <tr>
     <th><a href=".config/awesome">awesomewm 3.5+</a></th>
     <th><a href=".vim">vim</a></th>
@@ -11,15 +11,15 @@ Some of my configs
     <td valign="top">
       <ul>
         <li><a href=".config/awesome/rc.lua">rc</a></li>
-        <li><a href=".config/awesome/wi.lua">widgets</a> (<em>vicious</em>)</li>
-        <li><a href=".config/awesome/themes/dust/theme.lua">theme</a> (<em>dust</em>)</li>
-        <li><a href=".config/pianobar">pianobar fifo</a></li>
+        <li><a href=".config/awesome/wi.lua">widgets</a> <em>(vicious)</em></li>
+        <li><a href=".config/awesome/themes/dust/theme.lua">theme</a> <em>(dust)</em></li>
+        <li><a href=".config/pianobar">music fifo</a> <em>(pianobar)</em></li>
       </ul>
     </td>
     <td valign="top">
       <ul>
         <li><a href=".vim/vimrc">rc</a></li>
-        <li><a href=".vim/colors/railscasts.vim">colorscheme</a> (<em>railscasts</em>)</li>
+        <li><a href=".vim/colors/railscasts.vim">colorscheme</a> <em>(railscasts)</em></li>
       </ul>
     </td>
     <td valign="top">
@@ -35,7 +35,7 @@ Some of my configs
 And screenshots
 ------------
 
-<table>
+<table width="100%">
   <tr><th>Arch Linux Desktop (2010)</th><th>Arch Linux Laptop (2013)</th></tr>
   <tr>
     <td width="50%">
