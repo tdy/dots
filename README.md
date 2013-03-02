@@ -19,8 +19,8 @@ And [screenshots](screenshots)
 
 **Arch Linux Desktop (2010)**
 
-<a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20100113_1680x1050.png"><img src="screenshots/awesome_20100113_1680x1050.png" width="500" alt="Arch Linux Desktop (2010)" /></a>
+<a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20100113_1680x1050.png"><img src="screenshots/awesome_20100113_1680x1050.png" width="400" alt="Arch Linux Desktop (2010)" /></a>
 
 **Arch Linux Laptop (2013)**
 
-<a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20130301_2880x1800.png"><img src="screenshots/awesome_20130301_2880x1800.png" width="500" alt="Arch Linux Laptop (2013)" /></a>
+<a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20130301_2880x1800.png"><img src="screenshots/awesome_20130301_2880x1800.png" width="400" alt="Arch Linux Laptop (2013)" /></a>
