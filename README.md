@@ -1,14 +1,14 @@
 Some of my configs
 ------------
 
-<table width="90%">
+<table>
   <tr>
     <th><a href=".config/awesome">awesomewm 3.5+</a></th>
     <th><a href=".vim">vim</a></th>
     <th>appearance</th>
   </tr>
   <tr>
-    <td>
+    <td valign="top">
       <ul>
         <li><a href=".config/awesome/rc.lua">rc</a></li>
         <li><a href=".config/awesome/wi.lua">widgets</a> (<em>vicious</em>)</li>
@@ -16,13 +16,13 @@ Some of my configs
         <li><a href=".config/pianobar">pianobar fifo</a></li>
       </ul>
     </td>
-    <td>
+    <td valign="top">
       <ul>
         <li><a href=".vim/vimrc">rc</a></li>
         <li><a href=".vim/colors/railscasts.vim">colorscheme</a> (<em>railscasts</em>)</li>
       </ul>
     </td>
-    <td>
+    <td valign="top">
       <ul>
         <li><a href=".Xdefaults">X resources</li>
         <li><a href=".gtkrc.mine">gtk2</a></li>
@@ -35,7 +35,7 @@ Some of my configs
 And screenshots
 ------------
 
-<table width="90%">
+<table>
   <tr><th>Arch Linux Desktop (2010)</th><th>Arch Linux Laptop (2013)</th></tr>
   <tr>
     <td width="50%">
@@ -49,5 +49,5 @@ And screenshots
       </a>
     </td>
   </tr>
-  <tr><td colspan="2"><a href="screenshots">...</a></td></tr>
+  <tr><td colspan="2"><a href="screenshots">etc.</a></td></tr>
 </table>
