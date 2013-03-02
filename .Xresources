@@ -6,41 +6,41 @@ Xft.hinting:           true
 Xft.hintstyle:         hintfull
 Xft.rgba:              rgb
 
-urxvt*font:            xft:monaco:pixelsize=25
-urxvt*boldFont:        xft:monaco:pixelsize=25
-urxvt*scrollBar:       false
-urxvt*saveLines:       32767
-urxvt.colorUL:         #a9c9bc
-urxvt*cursorColor:     orange
-urxvt*cursorBlink:     true
-urxvt*geometry:        90x26
-urxvt*title:           rxvt-256color
-urxvt*tintColor:       #636363
-urxvt*shading:         100
-urxvt*transparent:     true
-urxvt*pastableTabs:    true
-urxvt*jumpScroll:      true
-urxvt*secondaryScroll: true
-urxvt*urgentOnBell:    true
+URxvt*font:            xft:monaco:pixelsize=25
+URxvt*boldFont:        xft:monaco:pixelsize=25
+URxvt*scrollBar:       false
+URxvt*saveLines:       32767
+URxvt.colorUL:         #a9c9bc
+URxvt*cursorColor:     orange
+URxvt*cursorBlink:     true
+URxvt*geometry:        90x26
+URxvt*title:           rxvt-256color
+URxvt*tintColor:       #636363
+URxvt*shading:         100
+URxvt*transparent:     true
+URxvt*pastableTabs:    true
+URxvt*jumpScroll:      true
+URxvt*secondaryScroll: true
+URxvt*urgentOnBell:    true
 
-urxvt*perl-lib:             /usr/lib/urxvt/perl/
-urxvt*perl-ext-common:      default,url-select
-urxvt*url-launcher:         firefox
-urxvt*keysym.C-comma:       perl:url-select:select_next
-urxvt*url-select.launcher:  firefox
-urxvt*url-select.underline: true
-urxvt*url-select.button:    1
+URxvt*perl-lib:             /usr/lib/urxvt/perl/
+URxvt*perl-ext-common:      default,url-select
+URxvt*url-launcher:         firefox
+URxvt*keysym.C-comma:       perl:url-select:select_next
+URxvt*url-select.launcher:  firefox
+URxvt*url-select.underline: true
+URxvt*url-select.button:    1
 
-xterm*font:            -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
-xterm*boldFont:        -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
-xterm*boldMode:        false
-xterm*scrollBar:       false
-xterm*saveLines:       32767
-xterm*borderLess:      true
-xterm*cursorColor:     orange
-xterm*cursorBlink:     true
-xterm*pastableTabs:    true
-xterm*jumpScroll:      true
+XTerm*font:            -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
+XTerm*boldFont:        -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
+XTerm*boldMode:        false
+XTerm*scrollBar:       false
+XTerm*saveLines:       32767
+XTerm*borderLess:      true
+XTerm*cursorColor:     orange
+XTerm*cursorBlink:     true
+XTerm*pastableTabs:    true
+XTerm*jumpScroll:      true
 
 pianobar*font:         -*-monofur-medium-r-*-*-30-*-*-*-*-*-*-*
 pianobar*boldFont:     -*-monofur-medium-r-*-*-30-*-*-*-*-*-*-*
