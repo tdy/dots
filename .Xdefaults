@@ -10,10 +10,6 @@ urxvt*font:            xft:monaco:pixelsize=25
 urxvt*boldFont:        xft:monaco:pixelsize=25
 urxvt*scrollBar:       false
 urxvt*saveLines:       32767
-urxvt*perl-lib:        /usr/lib/urxvt/perl/
-urxvt*perl-ext-common: default,matcher
-urxvt*urlLauncher:     firefox
-urxvt*matcher.button:  1
 urxvt.colorUL:         #a9c9bc
 urxvt*cursorColor:     orange
 urxvt*cursorBlink:     true
@@ -26,6 +22,14 @@ urxvt*pastableTabs:    true
 urxvt*jumpScroll:      true
 urxvt*secondaryScroll: true
 urxvt*urgentOnBell:    true
+
+urxvt*perl-lib:             /usr/lib/urxvt/perl/
+urxvt*perl-ext-common:      default,url-select
+urxvt*url-launcher:         firefox
+urxvt*keysym.C-comma:       perl:url-select:select_next
+urxvt*url-select.launcher:  firefox
+urxvt*url-select.underline: true
+urxvt*url-select.button:    1
 
 xterm*font:            -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
 xterm*boldFont:        -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
