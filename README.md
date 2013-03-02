@@ -22,12 +22,12 @@ And [screenshots](screenshots)
   <tr>
     <td width="50%">
       <a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20100113_1680x1050.png">
-        <img src="screenshots/awesome_20100113_1680x1050.png" alt="Arch Linux Desktop (2010)" />
+        <img src="screenshots/awesome_20100113_1680x1050.png" width="100%" alt="Arch Linux Desktop (2010)" />
       </a>
     </td>
     <td width="50%">
       <a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20130301_2880x1800.png">
-        <img src="screenshots/awesome_20130301_2880x1800.png" alt="Arch Linux Laptop (2013)" />
+        <img src="screenshots/awesome_20130301_2880x1800.png" width="100%" alt="Arch Linux Laptop (2013)" />
       </a>
     </td>
   </tr>
