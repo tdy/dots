@@ -8,7 +8,7 @@ Some of my configs
     <th width="33%">system</th>
   </tr>
   <tr>
-    <td valign="top">
+    <td width="33%" valign="top">
       <ul>
         <li><a href=".config/awesome/rc.lua">rc</a></li>
         <li><a href=".config/awesome/wi.lua">widgets</a> <em>(vicious)</em></li>
@@ -16,13 +16,13 @@ Some of my configs
         <li><a href=".config/pianobar">music fifo</a> <em>(pianobar)</em></li>
       </ul>
     </td>
-    <td valign="top">
+    <td width="33%" valign="top">
       <ul>
         <li><a href=".vim/vimrc">rc</a></li>
         <li><a href=".vim/colors/railscasts.vim">colorscheme</a> <em>(railscasts)</em></li>
       </ul>
     </td>
-    <td valign="top">
+    <td width="33%" valign="top">
       <ul>
         <li><a href=".Xresources">X resources</li>
         <li><a href=".bashrc">bash profile</li>
