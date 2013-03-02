@@ -17,7 +17,7 @@ Some of my configs
 And [screenshots](screenshots)
 ------------
 
-<table>
+<table width="90%">
   <tr><th>Arch Linux Desktop (2010)</th><th>Arch Linux Laptop (2013)</th></tr>
   <tr>
     <td width="50%">
