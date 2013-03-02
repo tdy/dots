@@ -3,11 +3,11 @@ Some of my configs
 
 * [**awesomewm 3.5+**](.config/awesome)
     * [rc](.config/awesome/rc.lua)
-    * [widgets (__vicious__)](.config/awesome/wi.lua)
-    * [theme (__dust__)](.config/awesome/themes/dust/theme.lua)
+    * [widgets ( _vicious_ )](.config/awesome/wi.lua)
+    * [theme ( _dust_ )](.config/awesome/themes/dust/theme.lua)
 * [**vim**](.vim)
     * [rc](.vim/vimrc)
-    * [colorscheme (__railscasts__)](.vim/colors/railscasts.vim)
+    * [colorscheme ( _railscasts_ )](.vim/colors/railscasts.vim)
 * **gtk**
     * [2.x](.gtkrc.mine)
     * [3.x](.config/gtk-3.0/settings.ini)
