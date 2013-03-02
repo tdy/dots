@@ -1,11 +1,11 @@
 Some of my configs
 ------------
 
-<table width="100%">
+<table width="99%">
   <tr>
-    <th><a href=".config/awesome">awesomewm 3.5+</a></th>
-    <th><a href=".vim">vim</a></th>
-    <th>system</th>
+    <th width="33%"><a href=".config/awesome">awesomewm 3.5+</a></th>
+    <th width="33%"><a href=".vim">vim</a></th>
+    <th width="33%">system</th>
   </tr>
   <tr>
     <td valign="top">
