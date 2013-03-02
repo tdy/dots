@@ -59,5 +59,5 @@ And screenshots
       </a>
     </td>
   </tr>
-  <tr><th colspan="2"><a href="screenshots">etc.</a></th></tr>
+  <tr><th colspan="3"><a href="screenshots">etc.</a></th></tr>
 </table>
