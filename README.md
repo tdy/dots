@@ -37,17 +37,25 @@ Some of my configs
 And screenshots
 ------------
 
-<table width="100%">
-  <tr><th>Arch Linux Desktop (2010)</th><th>Arch Linux Laptop (2013)</th></tr>
+<table width="99%">
   <tr>
-    <td width="50%">
+    <th>Arch Linux Desktop (2010)</th>
+    <th>Arch Linux Thinkpad T410s (2011)</th>
+    <th>Arch Linux rMBP 15" (2013)</th></tr>
+  <tr>
+    <td width="33%">
       <a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20100113_1680x1050.png">
         <img src="screenshots/awesome_20100113_1680x1050.png" width="100%" alt="Arch Linux Desktop (2010)" />
       </a>
     </td>
-    <td width="50%">
+    <td width="33%">
+      <a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20110217_1440x900.png">
+        <img src="screenshots/awesome_20100113_1440x900.png" width="100%" alt="Arch Linux Thinkpad T410s (2011)" />
+      </a>
+    </td>
+    <td width="33%">
       <a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20130301_2880x1800.png">
-        <img src="screenshots/awesome_20130301_2880x1800.png" width="100%" alt="Arch Linux Laptop (2013)" />
+        <img src="screenshots/awesome_20130301_2880x1800.png" width="100%" alt="Arch Linux rMBP 15" (2013)" />
       </a>
     </td>
   </tr>
