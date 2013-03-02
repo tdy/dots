@@ -24,7 +24,7 @@ Some of my configs
     </td>
     <td valign="top">
       <ul>
-        <li><a href=".Xdefaults">X resources</li>
+        <li><a href=".Xresources">X resources</li>
         <li><a href=".gtkrc.mine">gtk2</a></li>
         <li><a href=".config/gtk-3.0/settings.ini">gtk3</a></li>
       </ul>
@@ -49,5 +49,5 @@ And screenshots
       </a>
     </td>
   </tr>
-  <tr><td colspan="2"><a href="screenshots">etc.</a></td></tr>
+  <tr><th colspan="2"><a href="screenshots">etc.</a></th></tr>
 </table>
