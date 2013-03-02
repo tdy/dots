@@ -2,15 +2,15 @@ Some of my configs
 ------------
 
 [**awesomewm 3.5+**](.config/awesome)
-    * [rc](.config/awesome/rc.lua)
-    * [_vicious_ widgets](.config/awesome/wi.lua)
-    * [_dust_ theme](.config/awesome/themes/dust/theme.lua)
+* [rc](.config/awesome/rc.lua)
+* [_vicious_ widgets](.config/awesome/wi.lua)
+* [_dust_ theme](.config/awesome/themes/dust/theme.lua)
 [**vim**](.vim)
-    * [rc](.vim/vimrc)
-    * [_railscasts_ colorscheme](.vim/colors/railscasts.vim)
+* [rc](.vim/vimrc)
+* [_railscasts_ colorscheme](.vim/colors/railscasts.vim)
 **gtk**
-    * [2.x](.gtkrc.mine)
-    * [3.x](.config/gtk-3.0/settings.ini)
+* [2.x](.gtkrc.mine)
+* [3.x](.config/gtk-3.0/settings.ini)
 [**rxvt-unicode _et al._**](.Xdefaults)
 [**pianobar**](.config/pianobar)
 
