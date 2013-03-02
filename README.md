@@ -34,7 +34,7 @@ Some of my configs
   </tr>
 </table>
 
-And screenshots
+... and screenshots
 ------------
 
 <table width="99%">
