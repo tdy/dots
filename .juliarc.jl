@@ -1,0 +1,1 @@
+ENV["JULIA_ANSWER_COLOR"] = "blue"
