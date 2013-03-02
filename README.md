@@ -1,18 +1,36 @@
 Some of my configs
 ------------
 
-* [**awesomewm 3.5+**](.config/awesome)
-    * [rc](.config/awesome/rc.lua)
-    * [widgets](.config/awesome/wi.lua) _(vicious)_
-    * [theme](.config/awesome/themes/dust/theme.lua) _(dust)_
-* [**vim**](.vim)
-    * [rc](.vim/vimrc)
-    * [colorscheme](.vim/colors/railscasts.vim) _(railscasts)_
-* **gtk**
-    * [2.x](.gtkrc.mine)
-    * [3.x](.config/gtk-3.0/settings.ini)
-* [**rxvt-unicode _et al._**](.Xdefaults)
-* [**pianobar**](.config/pianobar)
+<table width="90%">
+  <tr>
+    <th><a href=".config/awesome">awesomewm 3.5+</a></th>
+    <th><a href=".vim">vim</a></th>
+    <th>appearance</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li><a href=".config/awesome/rc.lua">rc</a></li>
+        <li><a href=".config/awesome/wi.lua">widgets</a> (<em>vicious</em>)</li>
+        <li><a href=".config/awesome/themes/dust/theme.lua">theme</a> (<em>dust</em>)</li>
+        <li><a href=".config/pianobar">pianobar fifo</a></li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li><a href=".vim/vimrc">rc</a></li>
+        <li><a href=".vim/colors/railscasts.vim">colorscheme</a> (<em>railscasts</em>)</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li><a href=".Xdefaults">X resources</li>
+        <li><a href=".gtkrc.mine">gtk2</a></li>
+        <li><a href=".config/gtk-3.0/settings.ini">gtk3</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 And [screenshots](screenshots)
 ------------
