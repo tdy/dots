@@ -40,7 +40,8 @@ vicious.cache(vicious.widgets.cpuinf)
 
 -- Core 0 freq
 cpufreq = wibox.widget.textbox()
-vicious.register(cpufreq, vicious.widgets.cpuinf, function(widget, args)
+vicious.register(cpufreq, vicious.widgets.cpuinf,
+  function(widget, args)
     return string.format("<span color='" .. beautiful.fg_em ..
       "'>cpu</span>%1.1fGHz", args["{cpu0 ghz}"])
   end, 3000)
@@ -63,8 +64,10 @@ vicious.register(cpugraph0, vicious.widgets.cpu, "$2")
 
 -- Core 0 %
 cpupct0 = wibox.widget.textbox()
-cpupct0.fit = function(box, w, h)
-    local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(pctwidth,w),h
+cpupct0.fit =
+  function(box, w, h)
+    local w, h = wibox.widget.textbox.fit(box, w, h)
+    return math.max(pctwidth, w), h
   end
 vicious.register(cpupct0, vicious.widgets.cpu, "$2%", 2)
 
@@ -87,8 +90,10 @@ vicious.register(cpugraph1, vicious.widgets.cpu, "$3")
 
 -- Core 1 %
 cpupct1 = wibox.widget.textbox()
-cpupct1.fit = function(box, w, h)
-    local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(pctwidth,w),h
+cpupct1.fit =
+  function(box, w, h)
+    local w, h = wibox.widget.textbox.fit(box, w, h)
+    return math.max(pctwidth, w), h
   end
 vicious.register(cpupct1, vicious.widgets.cpu, "$3%", 2)
 
@@ -110,8 +115,10 @@ vicious.register(cpugraph2, vicious.widgets.cpu, "$4")
 
 -- Core 2 %
 cpupct2 = wibox.widget.textbox()
-cpupct2.fit = function(box, w, h)
-    local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(pctwidth,w),h
+cpupct2.fit =
+  function(box, w, h)
+    local w, h = wibox.widget.textbox.fit(box, w, h)
+    return math.max(pctwidth, w), h
   end
 vicious.register(cpupct2, vicious.widgets.cpu, "$4%", 2)
 -- }}}
@@ -203,8 +210,10 @@ vicious.register(txwidget, vicious.widgets.net,
 
 -- TX speed
 txwidget = wibox.widget.textbox()
-txwidget.fit = function(box, w, h)
-    local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(netwidth,w),h
+txwidget.fit =
+  function(box, w, h)
+    local w, h = wibox.widget.textbox.fit(box, w, h)
+    return math.max(netwidth, w), h
   end
 vicious.register(txwidget, vicious.widgets.net, "${eth0 up_kb}", 2)
 
@@ -230,8 +239,10 @@ vicious.register(rxwidget, vicious.widgets.net,
 
 -- RX speed
 rxwidget = wibox.widget.textbox()
-rxwidget.fit = function(box, w, h)
-    local w,h = wibox.widget.textbox.fit(box,w,h) return math.max(netwidth,w),h
+rxwidget.fit =
+  function(box, w, h)
+    local w, h = wibox.widget.textbox.fit(box, w, h)
+    return math.max(netwidth, w), h
   end
 vicious.register(rxwidget, vicious.widgets.net, "${eth0 down_kb}", 2)
 -- }}}
@@ -241,9 +252,8 @@ weather = wibox.widget.textbox()
 vicious.register(weather, vicious.widgets.weather,
   "<span color='" .. beautiful.fg_em .. "'>${sky}</span> @ ${tempf}°F on",
   1501, "XXXX")
-weather:buttons(awful.util.table.join(awful.button({ }, 1, function()
-    vicious.force({ weather })
-  end)))
+weather:buttons(awful.util.table.join(awful.button({ }, 1,
+  function() vicious.force({ weather }) end)))
 -- }}}
 
 -- {{{ Pacman
@@ -253,7 +263,8 @@ pacicon:set_image(beautiful.widget_pac)
 
 -- Upgrades
 pacwidget = wibox.widget.textbox()
-vicious.register(pacwidget, vicious.widgets.pkg, function(widget, args)
+vicious.register(pacwidget, vicious.widgets.pkg,
+  function(widget, args)
     if args[1] > 0 then
       pacicon:set_image(beautiful.widget_pacnew)
     else
@@ -287,7 +298,8 @@ mpdicon:set_image(beautiful.widget_mpd)
 
 -- Song info
 mpdwidget = wibox.widget.textbox()
-vicious.register(mpdwidget, vicious.widgets.mpd, function(widget, args)
+vicious.register(mpdwidget, vicious.widgets.mpd,
+  function(widget, args)
     mpdicon:set_image(beautiful.widget_play)
     local bg = beautiful.bg_focus
 
@@ -342,7 +354,8 @@ vicious.register(mpdwidget, vicious.widgets.mpd, function(widget, args)
 
 -- Buttons
 mpdwidget:buttons(awful.util.table.join(
-  awful.button({ }, 1, function()
+  awful.button({ }, 1,
+    function()
       local f = io.popen("pgrep pianobar")
       p = f:read("*a"):match("([0-9]*)")
       if p == "" then
@@ -351,21 +364,11 @@ mpdwidget:buttons(awful.util.table.join(
         awful.util.spawn(pianobar_toggle, false)
       end
     end),
-  awful.button({ modkey }, 1, function()
-      awful.util.spawn(pianobar_upcoming, false)
-    end),
-  awful.button({ }, 2, function()
-      awful.util.spawn(pianobar_quit, false)
-    end),
-  awful.button({ }, 3, function()
-      awful.util.spawn(pianobar_station, false)
-    end),
-  awful.button({ }, 4, function()
-      awful.util.spawn(pianobar_next, false)
-    end),
-  awful.button({ }, 5, function()
-      awful.util.spawn(pianobar_history, false)
-    end)))
+  awful.button({ modkey }, 1, function() awful.util.spawn(pianobar_upcoming, false) end),
+  awful.button({ }, 2, function() awful.util.spawn(pianobar_quit, false) end),
+  awful.button({ }, 3, function() awful.util.spawn(pianobar_station, false) end),
+  awful.button({ }, 4, function() awful.util.spawn(pianobar_next, false) end),
+  awful.button({ }, 5, function() awful.util.spawn(pianobar_history, false) end)))
 mpdicon:buttons(mpdwidget:buttons())
 -- }}}
 
@@ -406,7 +409,8 @@ baticon:set_image(beautiful.widget_batfull)
 
 -- Charge %
 batpct = wibox.widget.textbox()
-vicious.register(batpct, vicious.widgets.bat, function(widget, args)
+vicious.register(batpct, vicious.widgets.bat,
+  function(widget, args)
     bat_state  = args[1]
     bat_charge = args[2]
     bat_time   = args[3]
