@@ -7,8 +7,8 @@ AwesomeWM
 
 <table width="100%">
   <tr>
-    <th>Arch Linux Desktop (2010)</th>
-    <th>Arch Linux Laptop (2013)</th></tr>
+    <th><a href="https://github.com/tdy/dots/tree/v3.4.14">v3.4.14</a> from 2010 (Arch Linux Desktop)</th>
+    <th>v3.5+ from 2013 (Arch Linux Laptop)</th></tr>
   <tr>
     <td width="50%">
       <a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20100113_1680x1050.png">
