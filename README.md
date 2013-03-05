@@ -1,63 +1,36 @@
-Some of my configs
-------------
-
-<table width="99%">
+<table width="100%">
   <tr>
-    <th width="33%"><a href=".config/awesome">awesomewm 3.5+</a></th>
-    <th width="33%"><a href=".vim">vim</a></th>
-    <th width="33%">system</th>
-  </tr>
+    <th>2008</th>
+    <th>2010</th>
+    <th>2011</th>
+    <th>2013</th>
   <tr>
-    <td width="33%" valign="top">
-      <ul>
-        <li><a href=".config/awesome/rc.lua">rc</a></li>
-        <li><a href=".config/awesome/wi.lua">widgets</a> <em>(vicious)</em></li>
-        <li><a href=".config/awesome/themes/dust/theme.lua">theme</a> <em>(dust)</em></li>
-        <li><a href=".config/pianobar">music fifo</a> <em>(pianobar)</em></li>
-      </ul>
+    <td width="25%">
+      <a href="https://github.com/tdy/dots/raw/master/screenshots/xfce_20080929_1680x1050.png">
+        <img src="screenshots/xfce_20080929_1680x1050.png" width="100%" alt="Xfce 4.6 Athlon 64 X2 Desktop (2008)" />
+      </a>
     </td>
-    <td width="33%" valign="top">
-      <ul>
-        <li><a href=".vim/vimrc">rc</a></li>
-        <li><a href=".vim/colors/railscasts.vim">colorscheme</a> <em>(railscasts)</em></li>
-      </ul>
-    </td>
-    <td width="33%" valign="top">
-      <ul>
-        <li><a href=".Xresources">X resources</li>
-        <li><a href=".bashrc">bash profile</li>
-        <li><a href=".dir_colors">ls colors</li>
-        <li><a href=".gtkrc.mine">gtk2</a></li>
-        <li><a href=".config/gtk-3.0/settings.ini">gtk3</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-... and screenshots
-------------
-
-<table width="99%">
-  <tr>
-    <th>Arch Linux Desktop (2010)</th>
-    <th>Arch Linux Thinkpad T410s (2011)</th>
-    <th>Arch Linux rMBP 15" (2013)</th></tr>
-  <tr>
-    <td width="33%">
+    <td width="25%">
       <a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20100113_1680x1050.png">
-        <img src="screenshots/awesome_20100113_1680x1050.png" width="100%" alt="Arch Linux Desktop (2010)" />
+        <img src="screenshots/awesome_20100113_1680x1050.png" width="100%" alt="AwesomeWM 3.4 Athlon 64 X2 Desktop (2010)" />
       </a>
     </td>
-    <td width="33%">
+    <td width="25%">
       <a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20110217_1440x900.png">
-        <img src="screenshots/awesome_20110217_1440x900.png" width="100%" alt="Arch Linux Thinkpad T410s (2011)" />
+        <img src="screenshots/awesome_20110217_1440x900.png" width="100%" alt="AwesomeWM 3.4 Thinkpad T410s (2011)" />
       </a>
     </td>
-    <td width="33%">
+    <td width="25%">
       <a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20130301_2880x1800.png">
-        <img src="screenshots/awesome_20130301_2880x1800.png" width="100%" alt="Arch Linux rMBP 15" (2013)" />
+        <img src="screenshots/awesome_20130301_2880x1800.png" width="100%" alt="AwesomeWM 3.5 MBP Retina 15" (2013)" />
       </a>
     </td>
   </tr>
-  <tr><th colspan="3"><a href="screenshots">etc.</a></th></tr>
+  <tr>
+    <td><ul><li><strong>Xfce 4.6</strong></li><li>Athlon 64 X2 Desktop</li><li><em>Arch Linux</em></li></ul></td>
+    <td><ul><li><strong>AwesomeWM 3.4</strong></li><li>Athlon 64 X2 Desktop</li><li><em>Arch Linux</em></li></ul></td>
+    <td><ul><li><strong>AwesomeWM 3.4</strong></li><li>Thinkpad T410s</li><li><em>Arch Linux</em></li></td>
+    <td><ul><li><strong>AwesomeWM 3.5</strong></li><li>MBP Retina 15"</li><li><em>Arch Linux</em></li></td>
+  <tr>
+  <tr><td align="center" colspan="4"><a href="screenshots"><strong>...</strong></a></td></tr>
 </table>
