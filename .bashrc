@@ -10,6 +10,10 @@ export CHROOT="$HOME/jail"
 export LC_COLLATE=POSIX
 export EWS_SVN=https://subversion.ews.illinois.edu/svn
 
+export XMODIFIERS="@im=fcitx"
+export QT_IM_MODULE=xim
+export GTK_IOM_MODULE=xim
+
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_DIRS=/usr/share
