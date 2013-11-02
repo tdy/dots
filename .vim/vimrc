@@ -77,3 +77,11 @@ nnoremap <CR> :nohlsearch<CR><CR>
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
+
+"spell checking
+set spell spelllang=en_us
+set spellfile=~/.vim/spell/en.utf-8.add
+hi SpellBad term=reverse ctermfg=white ctermbg=60 guifg=#ffffff guibg=#7f0000 gui=underline
+hi SpellCap guifg=#ffffff guibg=#7f007f
+hi SpellRare guifg=#ffffff guibg=#00007f gui=underline
+hi SpellLocal term=reverse ctermfg=black ctermbg=darkgreen guifg=#ffffff guibg=#7f0000 gui=underline
