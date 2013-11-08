@@ -85,3 +85,13 @@ hi SpellBad term=reverse ctermfg=white ctermbg=60 guifg=#ffffff guibg=#7f0000 gu
 hi SpellCap guifg=#ffffff guibg=#7f007f
 hi SpellRare guifg=#ffffff guibg=#00007f gui=underline
 hi SpellLocal term=reverse ctermfg=black ctermbg=darkgreen guifg=#ffffff guibg=#7f0000 gui=underline
+
+"trailing space
+function! StripSpace()
+  let mypos = getpos('.')
+  let myreg = getreg('/')
+  :%s/\s\+$//
+  call setpos('.', mypos)
+  call setreg('/', myreg)
+endfunction
+noremap <leader>ss :call StripSpace()<CR>
