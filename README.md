@@ -27,10 +27,10 @@
     </td>
   </tr>
   <tr>
-    <td><ul><li><strong>Xfce 4.6</strong></li><li>Athlon 64 X2 Desktop</li><li><em>Arch Linux</em></li></ul></td>
-    <td><ul><li><strong>AwesomeWM 3.4</strong></li><li>Athlon 64 X2 Desktop</li><li><em>Arch Linux</em></li></ul></td>
-    <td><ul><li><strong>AwesomeWM 3.4</strong></li><li>ThinkPad T410s</li><li><em>Arch Linux</em></li></td>
-    <td><ul><li><strong>AwesomeWM 3.5</strong></li><li>MBP Retina 15"</li><li><em>Arch Linux</em></li></td>
+    <td valign="top"><ul><li><strong>Xfce 4.6</strong></li><li>Athlon 64 X2 Desktop</li><li><em>Arch Linux</em></li></ul></td>
+    <td valign="top"><ul><li><strong>AwesomeWM 3.4</strong></li><li>Athlon 64 X2 Desktop</li><li><em>Arch Linux</em></li></ul></td>
+    <td valign="top"><ul><li><strong>AwesomeWM 3.4</strong></li><li>ThinkPad T410s</li><li><em>Arch Linux</em></li></td>
+    <td valign="top"><ul><li><strong>AwesomeWM 3.5</strong></li><li>MBP Retina 15"</li><li><em>Arch Linux</em></li></td>
   <tr>
   <tr><td align="center" colspan="4"><a href="screenshots"><strong>...</strong></a></td></tr>
 </table>
