@@ -31,12 +31,12 @@ theme.fg_focus              = "#111111"
 theme.fg_urgent             = "#ffffff"
 theme.fg_tooltip            = "#1a1a1a"
 theme.fg_em                 = "#d6d6d6"
-theme.fg_widget             = theme.bg_focus
+theme.fg_widget             = "#908884"
 theme.fg_center_widget      = "#636363"
 theme.fg_end_widget         = theme.fg_tooltip
 
 theme.bg_normal             = theme.fg_tooltip
-theme.bg_focus              = "#908884"
+theme.bg_focus              = theme.fg_widget
 theme.bg_urgent             = "#cd7171"
 theme.bg_tooltip            = theme.fg_em
 theme.bg_em                 = "#5a5a5a"
