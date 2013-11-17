@@ -7,12 +7,12 @@
   <tr>
     <td width="25%">
       <a href="https://github.com/tdy/dots/raw/master/screenshots/xfce_20080929_1680x1050.png">
-        <img src="screenshots/xfce_20080929_1680x1050.png" width="100%" alt="Xfce 4.6 Athlon 64 X2 Desktop (2008)" />
+        <img src="screenshots/xfce_20080929_1680x1050.png" width="100%" alt="Xfce 4.6 Athlon 64 X2 PC (2008)" />
       </a>
     </td>
     <td width="25%">
       <a href="https://github.com/tdy/dots/raw/master/screenshots/awesome_20100113_1680x1050.png">
-        <img src="screenshots/awesome_20100113_1680x1050.png" width="100%" alt="AwesomeWM 3.4 Athlon 64 X2 Desktop (2010)" />
+        <img src="screenshots/awesome_20100113_1680x1050.png" width="100%" alt="AwesomeWM 3.4 Athlon 64 X2 PC (2010)" />
       </a>
     </td>
     <td width="25%">
@@ -27,8 +27,8 @@
     </td>
   </tr>
   <tr>
-    <td valign="top"><ul><li><strong>Xfce 4.6</strong></li><li>Athlon 64 X2 Desktop</li><li><em>Arch Linux</em></li></ul></td>
-    <td valign="top"><ul><li><strong>AwesomeWM 3.4</strong></li><li>Athlon 64 X2 Desktop</li><li><em>Arch Linux</em></li></ul></td>
+    <td valign="top"><ul><li><strong>Xfce 4.6</strong></li><li>Athlon 64 X2 PC</li><li><em>Arch Linux</em></li></ul></td>
+    <td valign="top"><ul><li><strong>AwesomeWM 3.4</strong></li><li>Athlon 64 X2 PC</li><li><em>Arch Linux</em></li></ul></td>
     <td valign="top"><ul><li><strong>AwesomeWM 3.4</strong></li><li>ThinkPad T410s</li><li><em>Arch Linux</em></li></td>
     <td valign="top"><ul><li><strong>AwesomeWM 3.5</strong></li><li>MBP Retina 15"</li><li><em>Arch Linux</em></li></td>
   <tr>
