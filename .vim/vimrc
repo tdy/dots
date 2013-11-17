@@ -73,6 +73,21 @@ noremap <Down> gj
 "clear search results
 nnoremap <CR> :nohlsearch<CR><CR>
 
+"tabs
+nnoremap t0 :tabfirst<CR>
+nnoremap t^ :tabfirst<CR>
+nnoremap t$ :tablast<CR>
+nnoremap tH :tabfirst<CR>
+nnoremap tL :tablast<CR>
+nnoremap th :tabprev<CR>
+nnoremap tl :tabnext<CR>
+nnoremap tn :tabnext<Space>
+nnoremap tp :tabprev<Space>
+nnoremap te :tabedit<Space>
+nnoremap tm :tabmove<Space>
+nnoremap td :tabdo<Space>
+nnoremap tc :tabclose<CR>
+
 "latex
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
