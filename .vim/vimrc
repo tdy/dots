@@ -66,9 +66,13 @@ autocmd BufReadPost *.doc %!antiword "%"
 "avoid auto indent
 set pastetoggle=<F10>
 
-"go to start of wrapped line instead of next line
+"line navigation
 noremap <Up> gk
 noremap <Down> gj
+nnoremap j gj
+nnoremap gj j
+nnoremap gk k
+nnoremap k gk
 
 "clear search results
 nnoremap <CR> :nohlsearch<CR><CR>
