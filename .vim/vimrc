@@ -91,6 +91,7 @@ nnoremap te :tabedit<Space>
 nnoremap tm :tabmove<Space>
 nnoremap td :tabdo<Space>
 nnoremap tc :tabclose<CR>
+nnoremap to :tabonly<CR>
 
 "latex
 set grepprg=grep\ -nH\ $*
