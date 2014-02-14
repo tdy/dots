@@ -1,4 +1,4 @@
-AwesomeWM
+AwesomeWM (see [tdy/awesome][1] for the soon-to-be submodule)
 ------------
 
 * **config**: [v3.5+](rc.lua)
@@ -23,3 +23,5 @@ AwesomeWM
   </tr>
   <tr><th colspan="2"><a href="../../screenshots">and more...</a></th></tr>
 </table>
+
+[1]: https://github.com/tdy/awesome
