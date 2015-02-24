@@ -9,6 +9,7 @@ export PATH="$PATH:$HOME/bin:$HOME/.gem/ruby/1.9.1/bin:$SZGBIN"
 export CHROOT="$HOME/jail"
 export LC_COLLATE=POSIX
 export EWS_SVN=https://subversion.ews.illinois.edu/svn
+export EWS_LINUX=linux.ews.illinois.edu
 
 export XMODIFIERS="@im=fcitx"
 export QT_IM_MODULE=xim
@@ -32,5 +33,5 @@ alias ipython2='ipython2 --no-confirm-exit'
 alias ipy='ipython2 --no-confirm-exit'
 
 function aurploader() {
-  makepkg -fSA && /usr/bin/aurploader -kal "$XDG_CONFIG_HOME/aurploader.conf" "$@"
+  mkaurball -f && /usr/bin/aurploader -kal "$XDG_CONFIG_HOME/aurploader.conf" "$@"
 }
