@@ -1,3 +1,6 @@
 [submodule ".config/awesome"]
 	path = .config/awesome
 	url = https://github.com/tdy/awesome.git
+[submodule "screenshots"]
+	path = screenshots
+	url = https://github.com/tdy/screenshots.git
