@@ -1,0 +1,11 @@
+DIR=/usr/bin
+
+[[ ! $TERM =~ screen-256color && -z $TMUX && -x $DIR/tmux ]] && $DIR/tmux
+
+if [[ -x $DIR/fortune && -x $DIR/cowsay && -x $DIR/cowthink && $((RANDOM%4)) -eq 0 ]]; then
+  cowfile=$(ls ${DIR/bin/share}/cows/*.cow | shuf -n1)
+  cowbin=$(ls $DIR/cow{say,think} | shuf -n1)
+  $DIR/fortune -s | $cowbin -f $cowfile
+fi
+
+# vim:ft=sh ts=2 sw=2 et
