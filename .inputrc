@@ -1,0 +1,21 @@
+set editing-mode vi
+
+$if mode=vi
+
+set show-mode-in-prompt on
+set keyseq-timeout 0
+set show-all-if-ambiguous on
+
+"\C-l": clear-screen
+
+set keymap vi-command
+"gg": beginning-of-history
+"G": end-of-history
+"k": history-search-backward
+"j": history-search-forward
+"\eS": "Isudo \e$"
+
+set keymap vi-insert
+"\eS": "\eIsudo \eA"
+
+$endif
