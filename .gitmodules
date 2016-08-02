@@ -4,3 +4,6 @@
 [submodule "screenshots"]
 	path = screenshots
 	url = https://github.com/tdy/screenshots.git
+[submodule ".config/pianobar/control-pianobar"]
+	path = .config/pianobar/control-pianobar
+	url = https://github.com/Malabarba/control-pianobar.git
