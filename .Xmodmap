@@ -1,8 +1,0 @@
-! Caps => Esc
-clear Lock
-keysym Caps_Lock = Escape
-
-! Multimedia
-keycode 73 = XF86AudioPrev
-keycode 74 = XF86AudioPlay
-keycode 75 = XF86AudioNext
