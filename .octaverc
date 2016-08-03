@@ -1,4 +1,4 @@
 edit mode async
-EDITOR("gvim --servername OCTAVE --remote-tab %s")
+EDITOR("nvr --servername /tmp/nvoctave --remote")
 PS1("\\w:\\#> ")
 PAGER("vimpager")
