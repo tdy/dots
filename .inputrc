@@ -7,6 +7,12 @@ set keyseq-timeout 0
 set show-all-if-ambiguous on
 
 "\C-l": clear-screen
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\eb": backward-word
+"\ef": forward-word
+"\eg": glob-complete-word
+"\e=": possible-completions
 
 set keymap vi-command
 "gg": beginning-of-history
@@ -16,6 +22,8 @@ set keymap vi-command
 "\eS": "Isudo \e$"
 
 set keymap vi-insert
+"\ed": kill-word
+"\C-_": undo
 "\eS": "\eIsudo \eA"
 
 $endif
