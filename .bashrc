@@ -9,9 +9,8 @@ PS1='\u@\[\e[1;30m\]\h\[\e[0m\]:\[\e[0;33m\]\w\[\e[0;34m\]%\[\e[0m\] '
 HISTFILESIZE=1000000
 HISTSIZE=1000000
 HISTTIMEFORMAT='%F %T '
-HISTCONTROL=ignoreboth:erasedups
-shopt -s histappend 2>/dev/null
-PROMPT_COMMAND="history -n;history -w;history -c;history -r;$PROMPT_COMMAND"
+HISTCONTROL=ignoreboth
+PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 complete -cf sudo
 
