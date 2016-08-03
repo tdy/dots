@@ -1,10 +1,10 @@
-DIR=/usr/bin
+MP=/opt/local/bin
 
-[[ ! $TERM =~ screen-256color && -z $TMUX && -x $DIR/tmux ]] && $DIR/tmux
+[[ ! $TERM =~ screen-256color && -z $TMUX && -x $DIR/tmux && ! $TERM_PROGRAM == iTerm.app ]] && $DIR/tmux
 
-if [[ -x $DIR/fortune && -x $DIR/cowsay && -x $DIR/cowthink && $((RANDOM%4)) -eq 0 ]]; then
-  cowfile=$(ls ${DIR/bin/share}/cows/*.cow | shuf -n1)
-  cowbin=$(ls $DIR/cow{say,think} | shuf -n1)
+if [[ -x $DIR/fortune && -x $DIR/cowsay && -x $DIR/cowthink && -x $DIR/gshuf && $((RANDOM%4)) -eq 0 ]]; then
+  cowfile=$(ls ${DIR/bin/share}/cowsay/cows/*.cow | gshuf -n1)
+  cowbin=$(ls $DIR/cow{say,think} | gshuf -n1)
   $DIR/fortune -s | $cowbin -f $cowfile
 fi
 
