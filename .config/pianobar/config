@@ -1,3 +1,3 @@
-event_command = ~/.config/pianobar/control-pianobar/pianobar-notify.sh
+event_command = ~/.config/pianobar/eventcmd.sh
 format_nowplaying_song = [0;33m%t[0m by [0;34m%a[0m on %l[0;31m%r[0m%@%s
 format_nowplaying_station = Station [1;36m%n[0m
