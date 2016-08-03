@@ -45,13 +45,9 @@ register ] "\033:se ai\015a"
 bind ^] paste [.]
 
 # startup
-screen -t chat 1 su - weechat -c weechat-curses
-screen -t dl 2 rtorrent
-screen -t ctw 3 ctw --refresh=10 --nometric XXXXX
-screen -t sys 4 htop
-screen -t mp 5
+screen -t ? 1 /opt/local/bin/bash -l
 select 1
 
 # status line
-backtick 1 60 60 /home/tim/bin/uptime.sh
-hardstatus alwayslastline '%{= wk} %-w%{= KW} %n-%t %{-}%+w %=%{= KW} %H%1` %{-} %C %A '
+backtick 3 59 59 /Users/tim/bin/gettime.sh
+hardstatus alwayslastline '%{= bk} %-w%{= KB} %n-%t %{-}%+w %=%{= Kb} %H: %l %{-} %3` '
