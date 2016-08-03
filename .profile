@@ -1,24 +1,29 @@
-export LC_COLLATE=POSIX
+# http://superuser.com/a/583502
+if [[ -r /etc/profile ]]; then
+  PATH=""
+  source /etc/profile
+fi
+
 export MATLAB_USE_USERWORK=1
-export CHROOT="$HOME/jail"
 
 export EWS_SVN=https://subversion.ews.illinois.edu/svn
 export EWS_LINUX=linux.ews.illinois.edu
 
-export XMODIFIERS="@im=fcitx"
-export QT_IM_MODULE=xim
-export GTK_IOM_MODULE=xim
-
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_DIRS=/usr/share
-export XDG_CONFIG_DIRS=/etc/xdg
-export XDG_CACHE_HOME="$HOME/.cache"
+export MANPATH="/opt/local/share/man:$MANPATH"
 
 export PATH="$HOME/bin:$PATH"
+export PATH="$PATH:/Applications/MATLAB_R2013a.app/bin"
 export PATH="$PATH:$SZGBIN"
+
+# npm
 export PATH="$PATH:$HOME/.local/lib/npm/bin"
+
+# rvm
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# macports
+export SHELL=/opt/local/bin/bash
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # vim:ft=sh ts=2 sw=2 et
