@@ -14,9 +14,8 @@ fi
 HISTFILESIZE=1000000
 HISTSIZE=1000000
 HISTTIMEFORMAT='%F %T '
-HISTCONTROL=ignoreboth:erasedups
-shopt -s histappend 2>/dev/null
-PROMPT_COMMAND="history -n;history -w;history -c;history -r;$PROMPT_COMMAND"
+HISTCONTROL=ignoreboth
+PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 set -o vi
 export EDITOR=vim
