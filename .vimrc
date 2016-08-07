@@ -30,7 +30,7 @@ set viminfo^=!,h,f0,:100,/100,@100
 
 set laststatus=2
 set statusline=%<%f\ %y%m%r
-set statusline+=%{fugitive#statusline()}\  "keep trailing space
+set statusline+=%{fugitive#statusline()}
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
