@@ -3,7 +3,7 @@
 [[ -r $HOME/.dir_colors ]] && source "$HOME/.dir_colors"
 [[ -r $HOME/.fzf.bash ]] && source "$HOME/.fzf.bash"
 
-PS1='\u@\[\e[1;30m\]\h\[\e[0m\]:\[\e[0;33m\]\w\[\e[0;34m\]%\[\e[0m\] '
+PS1="\u@\[\e[1;30m\]\h\[\e[0m\]:\[\e[0;33m\]\w\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[\e[0;34m\]%\[\e[0m\] "
 
 HISTFILESIZE=1000000
 HISTSIZE=1000000
