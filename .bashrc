@@ -5,9 +5,9 @@ bind '"ç": "\C-x\C-addi$(__fzf_cd__)\C-x\C-e\C-x\C-r\C-m"'
 bind -m vi-command '"ç": "ddi$(__fzf_cd__)\C-x\C-e\C-x\C-r\C-m"'
 
 if [[ $TERM_PROGRAM == iTerm.app ]]; then
-  PS1='\u@\[\e[0;34m\]\h\[\e[0m\]:\[\e[1;35m\]\w\[\e[1;36m\]%\[\e[0m\] '
+  PS1="\u@\[\e[0;34m\]\h\[\e[0m\]:\[\e[1;35m\]\w\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[\e[1;36m\]%\[\e[0m\] "
 else
-  PS1='\u@\[\e[1;30m\]\h\[\e[0m\]:\[\e[0;33m\]\w\[\e[0;34m\]%\[\e[0m\] '
+  PS1="\u@\[\e[1;30m\]\h\[\e[0m\]:\[\e[0;33m\]\w\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[\e[0;34m\]%\[\e[0m\] "
 fi
 
 # http://unix.stackexchange.com/a/18443
