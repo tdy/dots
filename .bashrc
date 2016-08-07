@@ -5,12 +5,11 @@
 
 PS1='\u@\[\e[1;30m\]\h\[\e[0m\]:\[\e[0;33m\]\w\[\e[0;34m\]%\[\e[0m\] '
 
-# http://unix.stackexchange.com/a/18443
 HISTFILESIZE=1000000
 HISTSIZE=1000000
 HISTTIMEFORMAT='%F %T '
-HISTCONTROL=ignoreboth
-PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+HISTCONTROL=ignoreboth:erasedups
+shopt -s histappend
 
 complete -cf sudo
 
