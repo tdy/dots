@@ -18,7 +18,6 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export PATH="$HOME/bin:$PATH"
 export PATH="$PATH:$SZGBIN"
 export PATH="$PATH:$HOME/.local/lib/npm/bin"
-export PATH="$PATH:$HOME/.rvm/bin"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+eval "$(rbenv init -)"
 
 # vim:ft=sh ts=2 sw=2 et
