@@ -75,9 +75,9 @@ augroup END
 
 augroup unwantedspaces
   autocmd!
-  let blacklist = ['help', 'man', 'tar']
-  autocmd Syntax * if index(blacklist, &filetype) < 0 | syntax match ExtraSpace /\s\+$\|\s\+\ze\t\|\t\zs\s\+/ containedin=ALL | endif
-  autocmd Syntax * if index(blacklist, &filetype) < 0 | syntax match NBSpace / \+/ containedin=ALL | endif
+  let s:blacklist=['help', 'man', 'tar']
+  autocmd Syntax * if index(s:blacklist, &filetype) < 0 | syntax match ExtraSpace /\s\+$\|\s\+\ze\t\|\t\zs\s\+/ containedin=ALL | endif
+  autocmd Syntax * if index(s:blacklist, &filetype) < 0 | syntax match NBSpace / \+/ containedin=ALL | endif
   autocmd ColorScheme * highlight ExtraSpace ctermbg=darkblue guibg=#8296a0
   autocmd ColorScheme * highlight NBSpace ctermbg=red guibg=#8c5050
 augroup END
@@ -98,19 +98,11 @@ augroup END
 
 "syntax
 syntax enable
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 8
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-augroup syntasticcolors
-  autocmd!
-  autocmd ColorScheme * highlight SyntasticError term=reverse ctermfg=252 ctermbg=131 guifg=#d0d0d0 guibg=#af5f5f
-  autocmd ColorScheme * highlight SyntasticWarning term=reverse ctermfg=252 ctermbg=136 guifg=#d0d0d0 guibg=#af78700
-  autocmd ColorScheme * highlight link SyntasticErrorSign SyntasticError
-  autocmd ColorScheme * highlight link SyntasticWarningSign SyntasticWarning
-  autocmd ColorScheme * highlight WarningMsg ctermfg=6 ctermbg=1 cterm=NONE guifg=#c9c9c9 guibg=#8c5050 gui=NONE
-augroup END
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_loc_list_height=8
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
 
 "indents
 set shiftwidth=2
@@ -118,15 +110,9 @@ set tabstop=2
 set softtabstop=2
 set backspace=indent,eol,start
 set expandtab
-
 let g:indent_guides_enable_on_vim_startup=1
-let g:indent_guides_exclude_filetypes = ['help', 'man', 'tar']
+let g:indent_guides_exclude_filetypes=['help', 'man', 'tar']
 let g:indent_guides_auto_colors=0
-augroup indentguides
-  autocmd!
-  autocmd VimEnter,ColorScheme * highlight IndentGuidesOdd ctermfg=240 ctermbg=008 guifg=#585858 guibg=#404040
-  autocmd VimEnter,ColorScheme * highlight IndentGuidesEven ctermfg=240 ctermbg=237 guifg=#585858 guibg=#3a3a3a
-augroup END
 
 "folds
 set foldenable
@@ -195,7 +181,7 @@ nnoremap <Esc>= <C-w>=
 nnoremap <Esc>- <C-w>_
 
 "tmux
-let g:tmux_navigator_no_mappings = 1
+let g:tmux_navigator_no_mappings=1
 inoremap <silent> <Esc>H <C-o>:TmuxNavigateLeft<CR>
 inoremap <silent> <Esc>J <C-o>:TmuxNavigateDown<CR>
 inoremap <silent> <Esc>K <C-o>:TmuxNavigateUp<CR>
@@ -230,13 +216,9 @@ set spell spelllang=en_us
 set spellfile=~/.vim/spell/en.utf-8.add
 augroup spellcolors
   autocmd!
-  let blacklist = ['applescript', 'help', 'man', 'matlab', 'octave', 'tar', 'vim']
-  autocmd FileType * if index(blacklist, &filetype) > 0 | setlocal nospell | endif
+  let s:blacklist=['applescript', 'help', 'man', 'matlab', 'octave', 'tar', 'vim']
+  autocmd FileType * if index(s:blacklist, &filetype) > 0 | setlocal nospell | endif
   autocmd BufEnter *.conf,Portfile setlocal nospell
-  autocmd ColorScheme * highlight SpellBad term=reverse ctermfg=14 ctermbg=95 guifg=#dcdcdc guibg=#875f5f
-  autocmd ColorScheme * highlight SpellCap term=reverse ctermfg=14 ctermbg=2 guifg=#dcdcdc guibg=#657d3e
-  autocmd ColorScheme * highlight SpellRare term=reverse ctermfg=14 ctermbg=3 guifg=#dcdcdc guibg=#a98051
-  autocmd ColorScheme * highlight SpellLocal term=reverse ctermfg=14 ctermbg=102 guifg=#dcdcdc guibg=#878787
 augroup END
 map <F4> :setlocal spell! spell?<CR>
 imap <F4> <C-o>:setlocal spell! spell?<CR>
@@ -261,14 +243,9 @@ nmap <Leader>xb :w<CR>:!bash %<CR>
 
 "colors
 set background=dark
-augroup aftercolors
-  autocmd!
-  autocmd ColorScheme * highlight Search ctermfg=235 ctermbg=143 cterm=NONE guifg=#262626 guibg=#afaf5f gui=NONE
-  autocmd ColorScheme * highlight Normal ctermfg=15 ctermbg=236 cterm=NONE guifg=#d8c8bb guibg=#3a3a3a gui=NONE
-  autocmd ColorScheme * highlight SpecialKey ctermfg=240 ctermbg=NONE cterm=NONE guifg=#444444 guibg=NONE gui=NONE
-augroup END
 colorscheme railscasts-coloration
 
+"gui
 if has('gui_running')
   set guifont=Source\ Code\ Pro\ Light:h12
   augroup guivb
