@@ -67,7 +67,6 @@ endif
 
 augroup vimrcex
   autocmd!
-  autocmd FileType text setlocal textwidth=78
   autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
   if !exists(':DiffOrig')
     command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis | wincmd p | diffthis
@@ -97,14 +96,6 @@ augroup msword
   autocmd BufReadPost *.doc %!antiword %
 augroup END
 
-augroup octave
-  autocmd!
-  if exists('+omnifunc')
-    autocmd FileType octave if &omnifunc == '' | setlocal omnifunc=syntaxcomplete#Complete | endif
-  endif
-  autocmd FileType matlab setlocal keywordprg=info\ octave\ --vi-keys\ --index-search
-augroup END
-
 "syntax
 syntax enable
 let g:syntastic_always_populate_loc_list = 1
@@ -127,10 +118,6 @@ set tabstop=2
 set softtabstop=2
 set backspace=indent,eol,start
 set expandtab
-augroup tabmakefile
-  autocmd!
-  autocmd FileType make setlocal noexpandtab
-augroup END
 
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_exclude_filetypes = ['help', 'man', 'tar']

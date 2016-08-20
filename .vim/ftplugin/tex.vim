@@ -5,5 +5,5 @@ let g:Tex_ViewRule_pdf='okular --unique'
 let g:Tex_UseMakefile=1
 let g:Tex_Menus=0
 
-set shiftwidth=2
-set iskeyword+=:
+setlocal shiftwidth=2
+setlocal iskeyword+=:
