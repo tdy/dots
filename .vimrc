@@ -5,10 +5,10 @@ call plug#end()
 set nocompatible
 filetype plugin indent on
 
-let $BASH_ENV="$HOME/.bash_aliases"
+let $BASH_ENV = "$HOME/.bash_aliases"
 
-let maplocalleader=' '
-let mapleader=','
+let maplocalleader = ' '
+let mapleader = ','
 nnoremap <Leader>; ,
 
 set autoread
@@ -75,7 +75,7 @@ augroup END
 
 augroup unwantedspaces
   autocmd!
-  let s:blacklist=['help', 'man', 'tar']
+  let s:blacklist = ['help', 'man', 'tar']
   autocmd Syntax * if index(s:blacklist, &filetype) < 0 | syntax match ExtraSpace /\s\+$\|\s\+\ze\t\|\t\zs\s\+/ containedin=ALL | endif
   autocmd Syntax * if index(s:blacklist, &filetype) < 0 | syntax match NBSpace / \+/ containedin=ALL | endif
   autocmd ColorScheme * highlight ExtraSpace ctermbg=darkblue guibg=#8296a0
@@ -98,11 +98,11 @@ augroup END
 
 "syntax
 syntax enable
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_loc_list_height=8
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 8
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 "indents
 set shiftwidth=2
@@ -110,9 +110,9 @@ set tabstop=2
 set softtabstop=2
 set backspace=indent,eol,start
 set expandtab
-let g:indent_guides_enable_on_vim_startup=1
-let g:indent_guides_exclude_filetypes=['help', 'man', 'tar']
-let g:indent_guides_auto_colors=0
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_exclude_filetypes = ['help', 'man', 'tar']
+let g:indent_guides_auto_colors = 0
 
 "folds
 set foldenable
@@ -181,7 +181,7 @@ nnoremap <Esc>= <C-w>=
 nnoremap <Esc>- <C-w>_
 
 "tmux
-let g:tmux_navigator_no_mappings=1
+let g:tmux_navigator_no_mappings = 1
 inoremap <silent> <Esc>H <C-o>:TmuxNavigateLeft<CR>
 inoremap <silent> <Esc>J <C-o>:TmuxNavigateDown<CR>
 inoremap <silent> <Esc>K <C-o>:TmuxNavigateUp<CR>
@@ -216,7 +216,7 @@ set spell spelllang=en_us
 set spellfile=~/.vim/spell/en.utf-8.add
 augroup spellcolors
   autocmd!
-  let s:blacklist=['applescript', 'help', 'man', 'matlab', 'octave', 'tar', 'vim']
+  let s:blacklist = ['applescript', 'help', 'man', 'matlab', 'octave', 'tar', 'vim']
   autocmd FileType * if index(s:blacklist, &filetype) > 0 | setlocal nospell | endif
   autocmd BufEnter *.conf,Portfile setlocal nospell
 augroup END
@@ -224,12 +224,12 @@ map <F4> :setlocal spell! spell?<CR>
 imap <F4> <C-o>:setlocal spell! spell?<CR>
 
 "latex
-let g:tex_flavor='latex'
+let g:tex_flavor = 'latex'
 function! s:ToggleTexCompiler()
   if g:Tex_CompileRule_pdf == 'xelatex -interaction=nonstopmode $*'
-    let g:Tex_CompileRule_pdf='lualatex -interaction=nonstopmode $*'
+    let g:Tex_CompileRule_pdf = 'lualatex -interaction=nonstopmode $*'
   else
-    let g:Tex_CompileRule_pdf='xelatex -interaction=nonstopmode $*'
+    let g:Tex_CompileRule_pdf = 'xelatex -interaction=nonstopmode $*'
   endif
 endfunction
 map <Leader>lc :call <SID>ToggleTexCompiler()<CR>:echo g:Tex_CompileRule_pdf<CR>
