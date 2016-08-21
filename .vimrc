@@ -90,12 +90,6 @@ augroup fastescape
   autocmd InsertLeave * set timeoutlen=1000
 augroup END
 
-augroup msword
-  autocmd!
-  autocmd BufReadPre *.doc setlocal ro hlsearch!
-  autocmd BufReadPost *.doc %!antiword %
-augroup END
-
 "syntax
 syntax enable
 let g:syntastic_always_populate_loc_list = 1
