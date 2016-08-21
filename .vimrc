@@ -247,7 +247,7 @@ colorscheme railscasts-coloration
 
 "gui
 if has('gui_running')
-  set guifont=Source\ Code\ Pro\ Light:h12
+  set guifont=Menlo\ Regular:h12
   augroup guivb
     autocmd!
     autocmd GUIEnter * set vb t_vb=
