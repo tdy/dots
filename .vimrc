@@ -218,7 +218,7 @@ augroup spellcolors
   autocmd!
   let s:blacklist = ['applescript', 'help', 'man', 'matlab', 'octave', 'tar', 'vim']
   autocmd FileType * if index(s:blacklist, &filetype) > 0 | setlocal nospell | endif
-  autocmd BufEnter *.conf,Portfile setlocal nospell
+  autocmd BufEnter *.conf,*.log,*.diff,*.patch,PKGBUILD,Portfile setlocal nospell
 augroup END
 map <F4> :setlocal spell! spell?<CR>
 imap <F4> <C-o>:setlocal spell! spell?<CR>
