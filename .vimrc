@@ -217,17 +217,6 @@ augroup END
 map <F4> :setlocal spell! spell?<CR>
 imap <F4> <C-o>:setlocal spell! spell?<CR>
 
-"latex
-let g:tex_flavor = 'latex'
-function! s:ToggleTexCompiler()
-  if g:Tex_CompileRule_pdf == 'xelatex -interaction=nonstopmode $*'
-    let g:Tex_CompileRule_pdf = 'lualatex -interaction=nonstopmode $*'
-  else
-    let g:Tex_CompileRule_pdf = 'xelatex -interaction=nonstopmode $*'
-  endif
-endfunction
-map <Leader>lc :call <SID>ToggleTexCompiler()<CR>:echo g:Tex_CompileRule_pdf<CR>
-
 "run
 nmap <Leader>xx :w<CR>:!%:p<CR>
 nmap <Leader>xp :w<CR>:!python3 %<CR>
