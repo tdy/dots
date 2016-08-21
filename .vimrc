@@ -1,11 +1,11 @@
-call plug#begin('~/.vim/plugs')
-  source ~/.vim/plugs.vim
+call plug#begin($HOME.'/.vim/plugs')
+  source $HOME/.vim/plugs.vim
 call plug#end()
 
 set nocompatible
 filetype plugin indent on
 
-let $BASH_ENV = "$HOME/.bash_aliases"
+let $BASH_ENV = $HOME.'/.bash_aliases'
 
 let maplocalleader = ' '
 let mapleader = ','
@@ -25,7 +25,7 @@ set history=100
 set mouse=a
 set pastetoggle=<F8>
 
-set viminfo+=n~/.vim/viminfo
+set viminfo+=n$HOME/.vim/viminfo
 set viminfo^=!,h,f0,:100,/100,@100
 
 set laststatus=2
@@ -42,8 +42,8 @@ if isdirectory($HOME.'/.vim/backup') == 0
 endif
 set backupdir-=.
 set backupdir+=.
-set backupdir-=~/
-set backupdir^=~/.vim/backup/
+set backupdir-=$HOME/
+set backupdir^=$HOME/.vim/backup/
 set backupdir^=./.vim-backup/
 set backupskip+=/private/tmp/*
 set backup
@@ -52,8 +52,8 @@ if isdirectory($HOME.'/.vim/swap') == 0
   call mkdir($HOME.'/.vim/swap','p')
 endif
 set directory=./.vim-swap//
-set directory+=~/.vim/swap//
-set directory+=~/tmp//
+set directory+=$HOME/.vim/swap//
+set directory+=$HOME/tmp//
 set directory+=.
 
 if exists('+undofile')
@@ -61,7 +61,7 @@ if exists('+undofile')
     call mkdir($HOME.'/.vim/undo','p')
   endif
   set undodir=./.vim-undo//
-  set undodir+=~/.vim/undo//
+  set undodir+=$HOME/.vim/undo//
   set undofile
 endif
 
@@ -207,7 +207,7 @@ nnoremap <Leader>0 :10b<CR>
 
 "spell
 set spell spelllang=en_us
-set spellfile=~/.vim/spell/en.utf-8.add
+set spellfile=$HOME/.vim/spell/en.utf-8.add
 augroup spellcolors
   autocmd!
   let s:blacklist = ['applescript', 'help', 'man', 'matlab', 'octave', 'tar', 'vim']
