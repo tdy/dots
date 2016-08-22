@@ -10,5 +10,4 @@ augroup filetypedetect
   autocmd BufRead,BufNewFile *.jl                      setfiletype julia
   autocmd BufRead,BufNewFile *.swift                   setfiletype swift
   autocmd BufRead,BufNewFile *.doc                     setfiletype msword
-  autocmd BufRead,BufNewFile *.diff,*.patch            setfiletype patch
 augroup END
