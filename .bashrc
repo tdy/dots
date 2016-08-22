@@ -1,7 +1,11 @@
-[[ $- != *i* ]] && return # interactive session
+[[ $- != *i* ]] && return
+
+export GITAWAREPROMPT="$HOME/.bash/git-aware-prompt"
+[[ -r $GITAWAREPROMPT/main.sh ]] && source "$GITAWAREPROMPT/main.sh"
 [[ -r $HOME/.bash_aliases ]] && source "$HOME/.bash_aliases"
 [[ -r $HOME/.dir_colors ]] && source "$HOME/.dir_colors"
 [[ -r $HOME/.fzf.bash ]] && source "$HOME/.fzf.bash"
+[[ -r $HOME/.bash_login ]] && source "$HOME/.bash_login"
 
 PS1="\u@\[\e[1;30m\]\h\[\e[0m\]:\[\e[0;33m\]\w\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[\e[0;34m\]%\[\e[0m\] "
 
