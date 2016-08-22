@@ -75,7 +75,7 @@ augroup END
 
 augroup unwantedspaces
   autocmd!
-  let s:blacklist = ['help', 'man', 'tar']
+  let s:blacklist = ['help', 'man', 'patch', 'tar']
   autocmd Syntax * if index(s:blacklist, &filetype) < 0 | syntax match ExtraSpace /\s\+$\|\s\+\ze\t\|\t\zs\s\+/ containedin=ALL | endif
   autocmd Syntax * if index(s:blacklist, &filetype) < 0 | syntax match NBSpace / \+/ containedin=ALL | endif
   autocmd ColorScheme * highlight ExtraSpace ctermbg=darkblue guibg=#8296a0
@@ -105,7 +105,7 @@ set softtabstop=2
 set backspace=indent,eol,start
 set expandtab
 let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_exclude_filetypes = ['help', 'man', 'tar']
+let g:indent_guides_exclude_filetypes = ['help', 'man', 'patch', 'tar']
 let g:indent_guides_auto_colors = 0
 
 "folds
@@ -210,9 +210,9 @@ set spell spelllang=en_us
 set spellfile=$HOME/.vim/spell/en.utf-8.add
 augroup spellcolors
   autocmd!
-  let s:blacklist = ['applescript', 'help', 'man', 'matlab', 'octave', 'tar', 'vim']
+  let s:blacklist = ['applescript', 'help', 'man', 'matlab', 'octave', 'patch', 'tar', 'vim']
   autocmd FileType * if index(s:blacklist, &filetype) > 0 | setlocal nospell | endif
-  autocmd BufEnter *.conf,*.log,*.diff,*.patch,PKGBUILD,Portfile setlocal nospell
+  autocmd BufEnter *.conf,*.log,PKGBUILD,Portfile setlocal nospell
 augroup END
 map <F4> :setlocal spell! spell?<CR>
 imap <F4> <C-o>:setlocal spell! spell?<CR>
