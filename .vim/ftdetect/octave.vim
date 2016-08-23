@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.oct setfiletype octave
+autocmd BufNewFile,BufRead *.oct setlocal filetype=octave
