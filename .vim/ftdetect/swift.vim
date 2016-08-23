@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.swift setfiletype swift
+autocmd BufNewFile,BufRead *.swift setlocal filetype=swift

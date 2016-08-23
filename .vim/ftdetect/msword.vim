@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.doc setfiletype msword
+autocmd BufNewFile,BufRead *.doc setlocal filetype=msword
