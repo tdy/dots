@@ -1,5 +1,5 @@
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-update-rc' }
-Plug 'junegunn/fzf.vim'
+  Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'junegunn/limelight.vim', { 'on': 'Limelight' }
 Plug 'tpope/vim-surround'
@@ -8,6 +8,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-fugitive'
+  Plug 'junegunn/gv.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
 Plug 'vim-pandoc/vim-pandoc'
