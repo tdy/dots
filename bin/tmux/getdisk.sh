@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 bg=${1:colour256}
-used=$(df -h | awk '$9=="/" { sub(/%/,"",$6); printf "%.f", $5*9/100 }')
+used=$(df -h | awk '$9=="/" { sub(/%/,"",$5); printf "%.f", $5*9/100 }')
 
 case $used in
   0) block=" " ;;
