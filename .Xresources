@@ -6,8 +6,8 @@ Xft.hinting: true
 Xft.hintstyle: hintfull
 Xft.rgba: rgb
 
-URxvt*font: xft:monaco:pixelsize=25
-URxvt*boldFont: xft:monaco:pixelsize=25
+URxvt*font: xft:terminus:pixelsize=12
+URxvt*boldFont: xft:terminus:pixelsize=12
 URxvt*scrollBar: false
 URxvt*saveLines: 32767
 URxvt.colorUL: #a9c9bc
@@ -31,8 +31,8 @@ URxvt*url-select.launcher: firefox
 URxvt*url-select.underline: true
 URxvt*url-select.button: 1
 
-XTerm*font: -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
-XTerm*boldFont: -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
+XTerm*font: -*-ubuntu mono-medium-r-*-*-12-*-*-*-*-*-*-*
+XTerm*boldFont: -*-ubuntu mono-medium-r-*-*-12-*-*-*-*-*-*-*
 XTerm*boldMode: false
 XTerm*scrollBar: false
 XTerm*saveLines: 32767
@@ -42,13 +42,13 @@ XTerm*cursorBlink: true
 XTerm*pastableTabs: true
 XTerm*jumpScroll: true
 
-pianobar*font: -*-monofur-medium-r-*-*-30-*-*-*-*-*-*-*
-pianobar*boldFont: -*-monofur-medium-r-*-*-30-*-*-*-*-*-*-*
+pianobar*font: -*-monofur-medium-r-*-*-16-*-*-*-*-*-*-*
+pianobar*boldFont: -*-monofur-medium-r-*-*-16-*-*-*-*-*-*-*
 pianobar*foreground: #a6a6a6
 pianobar*urgentOnBell: true
 
-scratch*font: -*-ubuntu mono-medium-r-*-*-40-*-*-*-*-*-*-*
-scratch*boldFont: -*-ubuntu mono-medium-r-*-*-40-*-*-*-*-*-*-*
+scratch*font: -*-ubuntu mono-medium-r-*-*-16-*-*-*-*-*-*-*
+scratch*boldFont: -*-ubuntu mono-medium-r-*-*-16-*-*-*-*-*-*-*
 scratch*boldMode: false
 scratch*scrollBar: false
 scratch*saveLines: 32767
