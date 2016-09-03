@@ -1,0 +1,3 @@
+backend: Qt5Agg
+image.cmap: viridis
+savefig.dpi: 300
