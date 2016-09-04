@@ -1,3 +1,4 @@
 backend: MacOSX
 image.cmap: viridis
+image.origin: lower
 savefig.dpi: 300
