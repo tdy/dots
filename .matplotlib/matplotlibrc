@@ -2,3 +2,4 @@ backend: Qt5Agg
 image.cmap: viridis
 image.origin: lower
 savefig.dpi: 300
+savefig.bbox: tight
