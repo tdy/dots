@@ -4,7 +4,7 @@
 
 ### [awesomeWM](https://github.com/awesomeWM/awesome) 4.0, MacBook Pro 15" (Retina, Mid 2012)
 
-[<img src="https://github.com/tdy/screenshots/blob/master/awesome_20170104_2880x1800.png" width="250px" alt="[2017] awesomeWM 4.0, MacBook Pro 15'' (Retina, Mid 2012)" />](https://raw.githubusercontent.com/tdy/screenshots/master/awesome_20170104_2880x1800.png)
+[<img src="https://github.com/tdy/screenshots/blob/master/awesome_20170105_2880x1800.png" width="250px" alt="[2017] awesomeWM 4.0, MacBook Pro 15'' (Retina, Mid 2012)" />](https://raw.githubusercontent.com/tdy/screenshots/master/awesome_20170105_2880x1800.png)
 
 ## 2013
 
