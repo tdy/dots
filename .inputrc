@@ -1,3 +1,4 @@
+set mark-symlinked-directories on
 set editing-mode vi
 
 $if mode=vi
