@@ -17,6 +17,8 @@ HISTTIMEFORMAT='%F %T '
 HISTCONTROL=ignoreboth:erasedups
 shopt -s histappend
 
+complete -f unrar
+
 set -o vi
 export EDITOR=vim
 export PAGER=vimpager
