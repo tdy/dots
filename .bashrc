@@ -16,6 +16,7 @@ HISTCONTROL=ignoreboth:erasedups
 shopt -s histappend
 
 complete -cf sudo
+complete -f unrar
 
 set -o vi
 export EDITOR=vim
